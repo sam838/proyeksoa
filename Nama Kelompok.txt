@@ -1,4 +1,4 @@
-Naomi Widjaya		218116697
-Samuel Christian	218116703
-Stefano Calvin 		218116704
-Albert Yonathan W	218116743
+Naomi Widjaya		218116697 (Recharge, historical weather data, national alert)
+Samuel Christian	218116703  (Register, verifikasi email, get recent earthquake, upload cuaca pada hari ini)
+Stefano Calvin 		218116704 (Login, Forgot password, top up, get all user admin, ban dan unban user)
+Albert Yonathan W	218116743 (Get weather specific location, temperature, air pollution, get weather saved by user)
