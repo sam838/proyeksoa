@@ -1,0 +1,3 @@
+Pada webservice terdapat fitur verifikasi email 
+sehingga source code yang dikirimkan source code export dari glitch 
+dikarenakan verifikasi email tidak bisa dijalankan ketika menggunakan localhost
