@@ -1,0 +1,606 @@
+{
+	"info": {
+		"_postman_id": "8d4a4e99-266b-42b5-a787-12ab497dab16",
+		"name": "Proyek Soa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "samuel1@mhs.stts.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "Sam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/user/register",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "asd",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "confirm_password",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "now.mie24@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/user/login",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0MjkyMjUsImV4cCI6MTYyNDQzMjgyNX0.awiN6nLwxrwXxLIHj7DqzaL6Z3HfxCByQPufik3V1AY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "saldo",
+							"value": "100000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/user/topup",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"user",
+						"topup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "now.mie24@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "confirm_new_password",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/user/forgot_password",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"user",
+						"forgot_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recharge",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0Mjk2NTcsImV4cCI6MTYyNDQzMzI1N30.p6HGmiUkSkeACZwFGoIniozXnaxU7fJ1HQrouBpJnv4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/user/recharge",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"user",
+						"recharge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ban user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluIiwiaWF0IjoxNjI0NDI5NDM2LCJleHAiOjE2MjQ0MzMwMzZ9.EV76KcaUrtheCWnBED33GQLHmGNzmg1rbQaX4hKTo_0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "a@a",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "conf",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/admin/ban/samuel1@mhs.stts.edu",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"admin",
+						"ban",
+						"samuel1@mhs.stts.edu"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "a@a.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unban user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluIiwiaWF0IjoxNjI0NDI5NDM2LCJleHAiOjE2MjQ0MzMwMzZ9.EV76KcaUrtheCWnBED33GQLHmGNzmg1rbQaX4hKTo_0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/admin/unban/samuel1@mhs.stts.edu",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"admin",
+						"unban",
+						"samuel1@mhs.stts.edu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluIiwiaWF0IjoxNjI0NDI5NDM2LCJleHAiOjE2MjQ0MzMwMzZ9.EV76KcaUrtheCWnBED33GQLHmGNzmg1rbQaX4hKTo_0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/admin/users",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"admin",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weather",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0MzA4OTksImV4cCI6MTYyNDQzNDQ5OX0.A1M7B5lhxL-48DMJtTDsLVhkgsFFoPE_j8wYi-B_E6g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/weather?location=jember",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"weather"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "jember"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "temperature",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0MzA4OTksImV4cCI6MTYyNDQzNDQ5OX0.A1M7B5lhxL-48DMJtTDsLVhkgsFFoPE_j8wYi-B_E6g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/weather/temperature?location=jember",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"weather",
+						"temperature"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "jember"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "air pollution",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0Mjk2NTcsImV4cCI6MTYyNDQzMzI1N30.p6HGmiUkSkeACZwFGoIniozXnaxU7fJ1HQrouBpJnv4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/weather/airpollution/68131",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"weather",
+						"airpollution",
+						"68131"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weathers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluIiwiaWF0IjoxNjI0NDMxMTQ1LCJleHAiOjE2MjQ0MzQ3NDV9.h9S21tK0DgHZ2fPJsvLd2eomgNpIa5wVKrI9lo8dVpQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/admin/weathers",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"admin",
+						"weathers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historical",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0Mjk2NTcsImV4cCI6MTYyNDQzMzI1N30.p6HGmiUkSkeACZwFGoIniozXnaxU7fJ1HQrouBpJnv4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "location",
+							"value": "jember",
+							"type": "text"
+						},
+						{
+							"key": "datetime",
+							"value": "2021-06-20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/weather/historical",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"weather",
+						"historical"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alerts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0Mjk2NTcsImV4cCI6MTYyNDQzMzI1N30.p6HGmiUkSkeACZwFGoIniozXnaxU7fJ1HQrouBpJnv4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "location",
+							"value": "Chicago",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/weather/national_alerts",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"weather",
+						"national_alerts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5vdy5taWUyNEBnbWFpbC5jb20iLCJpYXQiOjE2MjQ0MzEyMDAsImV4cCI6MTYyNDQzNDgwMH0.5peQDrdKxictIXkfd2os-P0uBggEnGfw1EsAphVDuyk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "deskripsi",
+							"value": "Cuaca hari ini panas",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "foto_cuaca",
+							"type": "file",
+							"src": "/C:/Users/Samuel PC/Pictures/bh3rd/2021-04-01-17-27-27_0.png"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/user/upload",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"user",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Earthquake",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fish-snapdragon-oriole.glitch.me/weather/earthquake",
+					"protocol": "https",
+					"host": [
+						"fish-snapdragon-oriole",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"weather",
+						"earthquake"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
